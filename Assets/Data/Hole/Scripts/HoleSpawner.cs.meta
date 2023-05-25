@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 51f6be2fa2e8bf740b19f120eb9ff7cb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - holePrefab: {fileID: 4972462439579559357, guid: 63ac4059faa66ac4ea1e53663008e568,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
