@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace Data.Settings
+namespace Data.Common.Settings
 {
     public class GameSettings : MonoBehaviour
     {

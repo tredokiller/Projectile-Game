@@ -93,9 +93,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7583015352459737351}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7953774276900865185
@@ -112,6 +120,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubeSize: 1
   cubeMaterial: {fileID: 2100000, guid: 3aca83873683ba547ae841998199b4f4, type: 2}
-  holePrefab: {fileID: 4972462439579559357, guid: 63ac4059faa66ac4ea1e53663008e568,
+  swashParticle: {fileID: 8116381695387032145, guid: 44fb77fbdc3cddb49b8815b9af673c7a,
     type: 3}
   lifeTime: 3

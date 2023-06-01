@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: d401874eccf8b444faf6dc2a8cebec53
+guid: 6a312bb14f0e04e46a56752fe32a8352
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - cubeMaterial: {instanceID: 0}
-  - swashParticle: {fileID: 8116381695387032145, guid: 7b70fa928381e954b9bec54bbfc92ba8,
-      type: 3}
+  - wallCamera: {instanceID: 0}
+  - renderTexture: {fileID: 8400000, guid: b476e294eedd02746b5af67e580220b1, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

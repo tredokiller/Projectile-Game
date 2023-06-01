@@ -1,5 +1,7 @@
+using Data.Common.Scripts;
 using Data.Hole.Scripts;
 using Data.Projectile.Scripts;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Data.RandomCube.Scripts
@@ -8,6 +10,8 @@ namespace Data.RandomCube.Scripts
     {
         [SerializeField] private float cubeSize = 1f;
         [SerializeField] private Material cubeMaterial;
+
+        [SerializeField] private GameObject swashParticle;
         
         private MeshFilter _meshFilter;
         private MeshRenderer _meshRenderer;
@@ -71,7 +75,11 @@ namespace Data.RandomCube.Scripts
         {
             _hasRebound = false;
             gameObject.SetActive(false);
-            HoleSpawner.Instance.SpawnHole(hit.point + hit.normal * 0.1f, Quaternion.LookRotation(hit.normal));
+            Instantiate(swashParticle, transform.position , new Quaternion());
+            if (hit.collider.gameObject.CompareTag(Tags.WallTag))
+            {
+                HoleRenderer.Instance.RenderHole(hit.point + hit.normal * 0.1f, Quaternion.LookRotation(hit.normal));
+            }
         }
     }
 }

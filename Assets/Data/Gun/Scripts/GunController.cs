@@ -17,6 +17,7 @@ namespace Data.Gun.Scripts
         [SerializeField] private Transform shotPosition;
         [SerializeField] private Transform gunMain;
         [SerializeField] private float initialVelocity;
+        [SerializeField] private GameObject swashParticle;
         private const float Angle = 10f;
 
         public const float MinInitialVelocity = 1f;
@@ -68,10 +69,14 @@ namespace Data.Gun.Scripts
             {
                 cube.MoveByParabola(shotPosition.position, shotPosition.up , initialVelocity, Angle * Mathf.Deg2Rad);
                 
+                _animation.Stop();
                 _animation.Play();
+                
+                Instantiate(swashParticle, shotPosition);
                 OnShot.Invoke();
             }
         }
+        
 
         public void SetInitialVelocity(float velocity)
         {
