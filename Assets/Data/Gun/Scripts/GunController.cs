@@ -23,6 +23,8 @@ namespace Data.Gun.Scripts
         public const float MinInitialVelocity = 1f;
         public const float MaxInitialVelocity = 20f;
 
+        private const float MaxVerticalRotation = 0;
+
         private Animation _animation;
 
         private Vector2 _playerInput;
@@ -57,6 +59,8 @@ namespace Data.Gun.Scripts
             
             float verticalRotation = Mathf.LerpAngle(gunMain.rotation.eulerAngles.x, gunMain.rotation.eulerAngles.x - _playerInput.y,
                 smoothRotationTime * Time.deltaTime);
+
+            verticalRotation = Mathf.Max(verticalRotation, MaxVerticalRotation);
             
             transform.rotation = Quaternion.Euler(0 , horizontalRotation , 0);
             gunMain.localRotation =  Quaternion.Euler(verticalRotation , 0 , 0);

@@ -19,8 +19,7 @@ namespace Data.Wall.Scripts
         private void Awake()
         {
             _meshRenderer = GetComponent<MeshRenderer>();
-            _renderTexture = RenderTexture.GetTemporary(renderTextureWidth , renderTextureHeight , 64, RenderTextureFormat.RGB565, RenderTextureReadWrite.sRGB);
-            _renderTexture.antiAliasing = 2;
+            _renderTexture = RenderTexture.GetTemporary(renderTextureWidth , renderTextureHeight , 2, RenderTextureFormat.RGB565);
 
             HoleRenderer.OnHoleSpawned += RenderWall;
             

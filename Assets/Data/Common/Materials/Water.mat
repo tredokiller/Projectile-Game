@@ -98,9 +98,9 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FoamAmount: 19.81
+    - _FoamAmount: 3.1
     - _FoamCutOff: 5.75
-    - _FoamScale: 93.33
+    - _FoamScale: 76.7
     - _FoamSpeed: 3
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -123,11 +123,11 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _WaterDepth: 13.42
+    - _WaterDepth: 5.8
     - _WaveSpeed: 2
     - _WavesSpeed: 1.2
-    - _WavesStrenght: 0.26
-    - _WavesTiling: 100
+    - _WavesStrenght: 0.14
+    - _WavesTiling: 11
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 1

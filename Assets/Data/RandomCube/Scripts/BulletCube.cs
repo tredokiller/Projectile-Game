@@ -20,6 +20,7 @@ namespace Data.RandomCube.Scripts
         private float _reboundAngle;
 
         private const float ReboundSpeedMultiplier = 1.2f;
+        private const float RayMaxDistance = 0.4f;
 
         private Coroutine _coroutine;
 
@@ -56,7 +57,7 @@ namespace Data.RandomCube.Scripts
         private void CheckCollision(Vector3 direction)
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, direction, out hit, 0.3f))
+            if (Physics.Raycast(transform.position, direction, out hit, RayMaxDistance))
             {
                 StopCoroutine(_coroutine);
                 if (_hasRebound)
